@@ -1,0 +1,9 @@
+[submodule "ensembl-fs"]
+	path = ensembl-fs
+	url = https://github.com/stephen-riley/ensembl-fs.git
+[submodule "ensembl-net"]
+	path = ensembl-net
+	url = https://github.com/stephen-riley/ensembl-net.git
+[submodule "FuseSharp"]
+	path = FuseSharp
+	url = https://github.com/stephen-riley/FuseSharp.git
