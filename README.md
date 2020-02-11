@@ -10,6 +10,10 @@ EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_
 
 ![EnsemblFS demonstration](img/demo.gif) "EnsemblFS demonstration")
 
+## CAVEAT EMPTOR
+
+**THIS IS VERY EXPERIMENTAL CODE.**  Please don't use this for any production use.  See `Notes`, below, for a list of issues.
+
 ## Prerequisites
 
 *NOTE*: EnsemblFS only runs on macOS at this time.  If there is enough interest, I will port this to Linux and/or Windows.  File an issue [here](https://github.com/stephen-riley/ensembl-fs/issues) to request it.
@@ -71,6 +75,7 @@ The file at `ensembl-net/etc/ensembl.conf` contains the information necessary to
 
 * The code is built for Ensembl database version 99.  I've not tested it against version 98 schemas, so YMMV.
 * Only chromosome base pair data is supported right now.
+* Due to a problem between OSXFUSE and FuseSharp that I haven't located yet, you cannot do a simple `cat 2/REF` to see all the DNA in a chromosome--it'll hang the process and the Terminal!  Instead, you'll need to write a program or script that can `seek` to a range of data and read from there.
 
 ## Why this exists
 
