@@ -16,26 +16,30 @@ EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_
 
 1. EnsemblFS has only been tested on macOS Catalina (10.15) but should work on Leopard (10.5) and later.
 2. Requires Dotnet Core 3.0.  Install the SDK from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-3. (optional) If you want to run EnsemblFS against a local database, you'll need to download and install the Ensembl Data according to [these instructions](https://m.ensembl.org/info/docs/webcode/mirror/install/ensembl-data.html).
-4. (optional) Download and install [Visual Studio Code](https://code.visualstudio.com/download).  The three projects that make up EnsemblFS were all developed in VS Code and include helpful configurations that make running and debugging much simpler.
+3. OSXFUSE.  Install with `brew install osxfuse`.
+4. glib.  Install with `brew install glib`.
+5. (optional) If you want to run EnsemblFS against a local database, you'll need to download and install the Ensembl Data according to [these instructions](https://m.ensembl.org/info/docs/webcode/mirror/install/ensembl-data.html).
+6. (optional) Download and install [Visual Studio Code](https://code.visualstudio.com/download).  The three projects that make up EnsemblFS were all developed in VS Code and include helpful configurations that make running and debugging much simpler.
 
 ## Building and running (command line)
 
 1. Clone this repository locally: `git clone https://github.com/stephen-riley/ensembl-fs-quickstart.git`
 2. Change directory into the quickstart repo: `cd ensembl-fs-quickstart`
 3. Initialize and download the submodules: `git submodule init && git submodule update`
-4. Set configuration: `cp ensembl-net/etc/ensembl.conf ~/.ensembl.conf`
-5. Change directory to the main project: `cd ensembl-fs/EnsemblFS`
-6. Run EnsemblFS, mounting it in `/tmp`: `dotnet run -- /tmp/ensemblfs`
+4. Build the FuseSharp adapter library: `FuseSharp/src/Adaptor/buildadaptor`
+5. Set configuration: `cp ensembl-net/etc/ensembl.conf ~/.ensembl.conf`
+6. Change directory to the main project: `cd ensembl-fs/EnsemblFS`
+7. Run EnsemblFS, mounting it in `/tmp`: `dotnet run -- /tmp/ensemblfs`
 
 ## Building a running (Visual Studio Code)
 
 1. Clone this repository locally: `git clone https://github.com/stephen-riley/ensembl-fs-quickstart.git`
 2. Change directory into the quickstart repo: `cd ensembl-fs-quickstart`
 3. Initialize and download the submodules: `git submodule init && git submodule update`
-4. Set configuration: `cp ensembl-net/etc/ensembl.conf ~/.ensembl.conf`
-5. Fire up Visual Studio Code: `code .`
-6. From the `Debug` menu, select `Start Debugging` to run EnsemblFS mounted at `/tmp/ensemblfs`
+4. Build the FuseSharp adapter library: `FuseSharp/src/Adaptor/buildadaptor`
+5. Set configuration: `cp ensembl-net/etc/ensembl.conf ~/.ensembl.conf`
+6. Fire up Visual Studio Code: `code .`
+7. From the `Debug` menu, select `Start Debugging` to run EnsemblFS mounted at `/tmp/ensemblfs`
 
 ## Using EnsemblFS
 
