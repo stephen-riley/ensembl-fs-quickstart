@@ -8,7 +8,7 @@ A meta-repository of all the pieces needed to get [EnsemblFS](https://github.com
 
 EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_system) that presents an [Ensembl Human Genome](http://uswest.ensembl.org/Homo_sapiens/Info/Index) database as a set of files for easier exploration.
 
-![EnsemblFS demonstration](img/demo.gif) "EnsemblFS demonstration")
+![EnsemblFS demonstration](img/demo.gif "EnsemblFS demonstration")
 
 ## CAVEAT EMPTOR
 
@@ -49,7 +49,7 @@ EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_
 
 Currently EnsemblFS supports viewing chromosome data for the selected species.  To see a list of supported species, simply execute `ls` on the EnsemblFS mount point:
 
-![species list](img/species.png) "Species List")
+![species list](img/species.png "Species List")
 
 The overall directory structure is as follows:
 
