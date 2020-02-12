@@ -18,12 +18,13 @@ EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_
 
 *NOTE*: EnsemblFS only runs on macOS at this time.  If there is enough interest, I will port this to Linux and/or Windows.  File an issue [here](https://github.com/stephen-riley/ensembl-fs/issues) to request it.
 
-1. EnsemblFS has only been tested on macOS Catalina (10.15) but should work on Leopard (10.5) and later.
-2. Requires Dotnet Core 3.0.  Install the SDK from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-3. OSXFUSE.  Install with `brew install osxfuse`.
-4. glib.  Install with `brew install glib`.
-5. (optional) If you want to run EnsemblFS against a local database, you'll need to download and install the Ensembl Data according to [these instructions](https://m.ensembl.org/info/docs/webcode/mirror/install/ensembl-data.html).
-6. (optional) Download and install [Visual Studio Code](https://code.visualstudio.com/download).  The three projects that make up EnsemblFS were all developed in VS Code and include helpful configurations that make running and debugging much simpler.
+* EnsemblFS has only been tested on macOS Catalina (10.15) but should work on Leopard (10.5) and later.
+* Requires Dotnet Core 3.0.  Install the SDK from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+* Requires Xcode Command Line Tools.  Install with `xcode-select --install`.
+* Requires OSXFUSE.  Install with `brew cask install osxfuse`.
+* Requires glib.  Install with `brew install glib`.
+* (optional) If you want to run EnsemblFS against a local database, you'll need to download and install the Ensembl Data according to [these instructions](https://m.ensembl.org/info/docs/webcode/mirror/install/ensembl-data.html).
+* (optional) Download and install [Visual Studio Code](https://code.visualstudio.com/download).  The three projects that make up EnsemblFS were all developed in VS Code and include helpful configurations that make running and debugging much simpler.
 
 ## Building and running (command line)
 
