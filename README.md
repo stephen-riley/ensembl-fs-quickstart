@@ -77,6 +77,7 @@ The file at `ensembl-net/etc/ensembl.conf` contains the information necessary to
 * The code is built for Ensembl database version 99.  I've not tested it against version 98 schemas, so YMMV.
 * Only chromosome base pair data is supported right now.
 * See [this issue](https://github.com/stephen-riley/ensembl-fs/issues/1) for some notes on your Terminal configuration.  (tl;dr: Set your Terminal Scrollback setting to "Limit number of rows to: 10,000" under Profiles->Window).
+* If you see `mount_osxfuse: mount point /private/tmp/ensemblfs is itself on a OSXFUSE volume`, that means you need to *unmount* the virtual file system.  Just run the `umount` command, specifying the mount point; eg. `umount /private/tmp/ensemblfs`.
 
 ## Why this exists
 
