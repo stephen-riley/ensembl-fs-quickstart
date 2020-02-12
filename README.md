@@ -76,7 +76,7 @@ The file at `ensembl-net/etc/ensembl.conf` contains the information necessary to
 
 * The code is built for Ensembl database version 99.  I've not tested it against version 98 schemas, so YMMV.
 * Only chromosome base pair data is supported right now.
-* Due to a problem between OSXFUSE and FuseSharp that I haven't located yet, you cannot do a simple `cat 2/REF` to see all the DNA in a chromosome--it'll hang the process and the Terminal!  Instead, you'll need to write a program or script that can `seek` to a range of data and read from there.
+* See [this issue](https://github.com/stephen-riley/ensembl-fs/issues/1) for some notes on your Terminal configuration.  (tl;dr: Set your Terminal Scrollback setting to "Limit number of rows to: 10,000" under Profiles->Window).
 
 ## Why this exists
 
