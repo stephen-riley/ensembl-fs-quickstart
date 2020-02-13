@@ -8,6 +8,8 @@ A meta-repository of all the pieces needed to get [EnsemblFS](https://github.com
 
 EnsemblFS is a [virtual file system](https://en.wikipedia.org/wiki/Virtual_file_system) that presents an [Ensembl Human Genome](http://uswest.ensembl.org/Homo_sapiens/Info/Index) database as a set of files for easier exploration.
 
+For a quick intro to the Ensembl database structure and how EnsemblFS works with it, see [HOWITWORKS](https://github.com/stephen-riley/ensembl-fs/blob/master/HOWITWORKS.md).
+
 ![EnsemblFS demonstration](img/demo.gif "EnsemblFS demonstration")
 
 ## CAVEAT EMPTOR
