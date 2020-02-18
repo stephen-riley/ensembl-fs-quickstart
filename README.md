@@ -74,6 +74,10 @@ The `REF` files contain the actual base pair data (A, T, C, G, and N).  See the 
 
 The file at `ensembl-net/etc/ensembl.conf` contains the information necessary to connect to the desired Ensembl database.  This file must be copied to `~/.ensembl.conf` (or `/etc/ensembl.conf` for a global configuration).  It defaults to connecting to one of Ensembl's US-based public databases, which contains almost 500 different versions of different species.
 
+## How it works
+
+See [HOWITWORKS.md](https://github.com/stephen-riley/ensembl-fs/blob/master/HOWITWORKS.md) in the [EnsemblFS](https://github.com/stephen-riley/ensembl-fs) project.
+
 ## Notes
 
 * The code is built for Ensembl database version 99.  I've not tested it against version 98 schemas, so YMMV.
